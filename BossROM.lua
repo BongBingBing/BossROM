@@ -4,6 +4,14 @@ Credentials = readCredentials()
 local function getTime(timeCategory)
     local currTime = os.date("*t")
 
+    for i, k in pairs(currTime) do
+        if(i == timeCategory) then
+            return k
+        end
+    end
+
+    print("ERROR in getTime(): timeCategory not found")
+    return
 
 end
 
