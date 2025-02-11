@@ -1,5 +1,16 @@
-
+/*
+    get time table format:
+    sec 
+    min
+    hour
+    day
+    wday
+    yday
+    month
+    year
+*/
 Credentials = readCredentials()
+SessionTime = 300
 
 local function getTime(timeCategory)
     local currTime = os.date("*t")
@@ -31,7 +42,7 @@ local function login()
             if Credentials[username].isAdmin == 1 then
                 return username, 1
             else
-                return username, Credentials[username].isAdmin
+                return username, 0
             end
         else
             print("Invalid username or password. Please try again.")
@@ -46,7 +57,12 @@ end
 
 local function main()
     while true do
-        
+        local username, isAdmin = login()
+        if username then
+           print("Welcome, ".. username.. "!")
+           
+           local sessionStartTime = getTime("sec")
+        end
         
     end
 end
