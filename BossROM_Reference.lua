@@ -12,7 +12,7 @@ bosses = {
 baseCost = 5 -- Initial cost in cogs
 cooldownTime = 3600 -- Cooldown time in seconds (1 hour)
 lockoutTime = 600 -- Lockout time in seconds (10 minutes)
-sessionTime = 300 -- Session time in seconds (5 minutes)
+sessionTime = 30 -- Session time in seconds (5 minutes)
 
 chestLeft = peripheral.wrap("left") -- Wrap the chest peripheral on the left
 chestBack = peripheral.wrap("back") -- Wrap the chest peripheral behind

@@ -1,4 +1,4 @@
-/*
+--[[    
     get time table format:
     sec 
     min
@@ -8,7 +8,8 @@
     yday
     month
     year
-*/
+]]
+
 Credentials = readCredentials()
 SessionTime = 300
 
@@ -62,6 +63,10 @@ local function main()
            print("Welcome, ".. username.. "!")
            
            local sessionStartTime = getTime("sec")
+
+           while() do
+
+           end
         end
         
     end
